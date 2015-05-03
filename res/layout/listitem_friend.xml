@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="5dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/imAvatar"
+                android:src="@drawable/friend1"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/tvName"
+                android:text="Ivan Ivanovich"
+                android:layout_alignTop="@id/imAvatar"
+                android:layout_toRightOf="@id/imAvatar"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:id="@+id/tvContacts"
+                  android:text="+234234 23424, iasdf@mail.ru"
+                  android:layout_alignLeft="@id/tvName"
+                  android:layout_below="@id/tvName"
+                  android:layout_marginTop="3dp"
+                />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/tvBirthday"
+                android:text="ДР: 22.12.01"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tvContacts"
+                android:textColor="#AAAAAA"
+                />
+    </RelativeLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/imFavourite"
+            android:src="@drawable/favourite"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            />
+
+</RelativeLayout>
